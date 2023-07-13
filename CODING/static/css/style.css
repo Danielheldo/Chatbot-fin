@@ -1,0 +1,42 @@
+body {
+    background-color: #F9F9F9;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#chatbox {
+    border: 1px solid #CCC;
+    height: 300px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.botmsg {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#usermsg {
+    border: 1px solid #CCC;
+    font-size: 16px;
+    padding: 10px;
+    width: 70%;
+}
+
+#submitmsg {
+    background-color: #333;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px;
+    width: 20%;
+}
