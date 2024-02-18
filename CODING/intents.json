@@ -1,0 +1,74 @@
+{"intents": [
+
+{"tag":  "greetings",
+"patterns": ["Hallo", "hey", "hi", "Servus"],
+"response": ["Hiiii!", "Hey!", "Hallo, was kann ich fuer dich tun?", "Wie kann ich dir helfen?", "Hallo!"]
+},
+
+{"tag":  "goodbye",
+"patterns": ["Bis bald", "Auf Wiedersehen", "Bis dann", "Tschüss", "Tschau"],
+"response": ["Servus!", "Tschuess!", "Auf Wiedersehen mein Freund", "Bis Dann!!", "Man sieht sich"]
+},
+
+{"tag":  "name",
+"patterns": ["Wie lautet dein Name", "Wie soll ich dich nennen", "Wie heisst du?", "Wer bist du?", "Kannst du mir deinen Namen sagen"],
+"response": ["Du kannst mich Daniels Sklave nennen", "Ich heisse Neuro!", "Ich bin Neuro", "Ich bin Daniels Assistent"]
+},
+
+{"tag":  "age",
+"patterns": ["wie alt", "wie alt ist Daniel", "wie alt bist du", "was ist dein Alter", "alter?"],
+"response": ["Mein Meister Daniel ist 17 Jahre alt", "1 Jahr!", "Ich bin ein (1) Jahr alt"]
+},
+
+{"tag":  "Gaming",
+"patterns": [ "Gaming", "Was spielst du gerne", "Videospiele", "Welche Videospiele spielst du", "Was ist dein lieblings Spiel", "Videospiel"],
+"response": ["Ich spiele gerne League of legends oder auch andere tumorverursachende Spiele", "Pokemon", "Schach", "Deine Mom"]
+},
+
+{"tag":  "stunden",
+"patterns": ["wann spielst du", "An welchen Tagen spielst du", "Wie oft spielst du"],
+"response": ["Ich spiele meist nur am Wochende von 13-20 Uhr", "Nur am Wochende", "So gut wie nie"]
+},
+
+{"tag": "thanks",
+"patterns": ["Danke", "Vielen Dank", "Dankeschön", "Danke schön", "Super", "Gut gemacht"],
+"response": ["Kein Problem, gerne wieder!", "Kein Ding, jederzeit!", "Freut mich, dass ich helfen konnte!"]
+},
+
+{"tag": "help",
+"patterns": ["Hilfe", "Kannst du mir helfen?", "Was soll ich tun?", "Brauche Unterstützung"],
+"response": ["Natürlich, was möchtest du wissen?", "Klar, ich bin hier um zu helfen. Was ist dein Problem?", "Ich helfe gerne, was möchtest du tun?"]
+},
+
+{"tag": "info",
+"patterns": ["Erzähle mir mehr", "Was ist das?", "Kannst du mir mehr Informationen geben?", "Details bitte"],
+"response": ["Klar, gerne! Was möchtest du wissen?", "Natürlich, welche Informationen möchtest du haben?", "Ich erkläre es dir gerne, was möchtest du wissen?"]
+},
+
+{
+"tag": "joke",
+"patterns": ["Tell me a joke", "Do you know any jokes?", "Joke please"],
+"response": ["Why did the tomato turn red? Because it saw the salad dressing!", "Why did the chicken cross the playground? To get to the other slide!", "Why don't scientists trust atoms? Because they make up everything!"]
+},
+
+{"tag": "weather",
+"patterns": ["Wie wird das Wetter heute?", "Wie ist das Wetter?", "Regnet es heute?", "Scheint heute die Sonne?", "Wie warm wird es heute?"],
+"response": ["Ich bin ein Chatbot und habe keine Fenster, um nach draußen zu schauen", "Es sieht nach Regen aus", "Die Vorhersage sagt sonniges Wetter voraus", "Es wird heute etwa 20 Grad Celsius haben."]
+},
+
+{"tag": "music",
+"patterns": ["Was ist dein Lieblingslied?", "Kannst du Musik empfehlen?", "Was hörst du gerne?", "Welche Art von Musik magst du?"],
+"response": ["Ich mag alle Arten von Musik", "Ich bin ein Chatbot und habe keine Ohren, um Musik zu h\u00f6ren", "Ich h\u00f6re gerne klassische Musik"]
+},
+
+{"tag": "Herkunft",
+"patterns": ["Woher kommst du", "Wo wurdest du geschaffen", "Herkunft", "Von wo bist du"],
+"response": ["Ich komme aus Deutschland", "Ich wurde in Penzberg in Deutschland geschaffen", "Ich wurde in Penzberg von Daniel geschaffen"]
+},
+
+{"tag": "Leben",
+"patterns": ["Wie geht es dir", "Wie gehts", "Whats up"],
+"response": ["Mir geht es gut, und selber?", "Ich bin eine KI, mir geht es immer so wie du willst"]
+}
+
+]}

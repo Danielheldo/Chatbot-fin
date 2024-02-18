@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-image: url("../imgs/Blurry.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test {
+   display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255);
+    width: 100%;
+    font-size: 40px;
+}
+
+#chatbox {
+  border: 1px solid #ccc;
+  height: 300px;
+  margin-top: 10px;
+
+  overflow: auto;
+  padding: 10px;
+  width: 80%;
+  background: #ccc;
+}
+
+.chatbox-container {
+    width: 80%;
+    height: 2rem;
+
+}
+
+.botmsg {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#usermsg {
+    border: 1px solid #CCC;
+    font-size: 16px;
+    padding: 10px;
+    width: 70%;
+    margin: 20px 20px 1px 180px;
+}
+
+#submitmsg {
+    background-color: #333;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px;
+    width: 5%;
+}

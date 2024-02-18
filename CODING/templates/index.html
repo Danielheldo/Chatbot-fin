@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <section class="test">
+      <h2>Willkommen beim Chatbot</h2>
+    </section>
+    <div id="chatbox"></div>
+        <div class="chatbox-container">
+    <input type="text" id="usermsg" placeholder="Nachricht eingeben..." />
+    <button type="submit" id="submitmsg">Senden</button>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#submitmsg").click(sendMessage); // Klick auf "Senden"-Button
+        $("#usermsg").keydown(function (event) {
+          if (event.keyCode === 13) {
+            // Überprüfe, ob die Enter-Taste gedrückt wurde
+            sendMessage();
+          }
+        });
+
+        function sendMessage() {
+          var usermsg = $("#usermsg").val();
+          $.get("/get", { msg: usermsg }).done(function (data) {
+            var botmsg = $("<div>")
+              .text("Bot: " + data)
+              .addClass("botmsg");
+            $("#chatbox").append(botmsg);
+          });
+          $("#usermsg").val("");
+        }
+      });
+    </script>
+  </body>
+</html>
