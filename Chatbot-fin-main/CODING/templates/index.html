@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Chatbot</title>
+</head>
+<body>
+    <section class="test">
+        <h2>Welcome to the Chatbot</h2>
+    </section>
+    <div id="chatbox"></div>
+    <div class="chatbox-container">
+        <input type="text" id="usermsg" placeholder="Enter Message...">
+        <button type="submit" id="submitmsg">Send</button>
+    </div>
+        <form id="rating-form">
+            <label for="rating">Bewertung:</label>
+            <select id="rating" name="rating">
+                <option value="1">1 - Schlecht</option>
+                <option value="2">2 - Akzeptabel</option>
+                <option value="3">3 - Durchschnittlich</option>
+                <option value="4">4 - Gut</option>
+                <option value="5">5 - Ausgezeichnet</option>
+            </select>
+            <button type="submit">Bewertung abschicken</button>
+        </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#submitmsg").click(sendMessage); // Klick auf "Senden"-Button
+            $("#usermsg").keydown(function (event) {
+                if (event.keyCode === 13) { // Überprüfe, ob die Enter-Taste gedrückt wurde
+                    sendMessage();
+                }
+            });
+
+            $("#rating-form").submit(function(event) {
+                event.preventDefault(); // Formular-Standardverhalten unterbinden
+                var rating = $("#rating").val(); // Bewertung auswählen
+                // AJAX-Anfrage senden, um Bewertung an Server zu übermitteln
+                $.post("/rate", { rating: rating }).done(function(response) {
+                    console.log("Bewertung gesendet:", response);
+                    // Hier können Sie bei Bedarf eine Bestätigung oder eine Aktualisierung der Benutzeroberfläche vornehmen
+                });
+            });
+
+            
+            function sendMessage() {
+                var usermsg = $("#usermsg").val();
+                var usermsgDiv = $("<div>")
+                    .text("You: " + usermsg)  // Anzeigen des Benutzersatzes
+                    .addClass("usermsg");
+                $("#chatbox").append(usermsgDiv);
+
+                $.get("/get", { msg: usermsg }).done(function (data) {
+                    var botmsg = $("<div>")
+                        .text("Bot: " + data)
+                        .addClass("botmsg");
+                    $("#chatbox").append(botmsg);
+                });
+                $("#usermsg").val("");
+            }
+        });
+    </script>
+    <script src="../static/js/script.js" defer></script>
+</body>
+</html>

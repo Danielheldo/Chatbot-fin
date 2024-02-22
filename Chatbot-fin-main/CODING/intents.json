@@ -1,0 +1,69 @@
+{"intents": [
+
+{"tag":  "greetings",
+"patterns": ["Hello", "hey", "hi", "Servus"],
+"response": ["Hiiii!", "Hey!", "Hallo, was kann ich fuer dich tun?", "Wie kann ich dir helfen?", "Hallo!"]
+},
+
+{"tag":  "goodbye",
+"patterns": ["See you", "Goodbye", "Till then", "Bye", "Bye bye"],
+"response": ["Servus!", "Tschuess!", "Auf Wiedersehen mein Freund", "Bis Dann!!", "Man sieht sich"]
+},
+
+{"tag":  "name",
+"patterns": ["What is your name", "What should i call you", "What's your name?", "Who are you?", "Tell me your name"],
+"response": ["Du kannst mich Daniels Sklave nennen", "Ich heisse Neuro!", "Ich bin Neuro", "Ich bin Daniels Assistent"]
+},
+
+{"tag":  "age",
+"patterns": ["How old are you", "how old is your master", "what's your age", "age?"],
+"response": ["Mein Meister Daniel ist 17 Jahre alt", "1 Jahr!", "Ich bin ein (1) Jahr alt"]
+},
+
+{"tag":  "Gaming",
+"patterns": [ "Gaming", "What's your favourite game", "Videogames", "What videogames do you play", "KYS", "Games"],
+"response": [ "Pokemon", "Schach", "Deine Mom"]
+},
+
+{"tag": "thanks",
+"patterns": ["thanks", "Thank you very much", "Thank you", "Well done", "Super", "Good job"],
+"response": ["Kein Problem, gerne wieder!", "Kein Ding, jederzeit!", "Freut mich, dass ich helfen konnte!"]
+},
+
+{"tag": "help",
+"patterns": ["help", "Can you help me?", "What should i do", "I need assistance"],
+"response": ["Natürlich, was möchtest du wissen?", "Klar, ich bin hier um zu helfen. Was ist dein Problem?", "Ich helfe gerne, was möchtest du tun?"]
+},
+
+{"tag": "info",
+"patterns": ["Tell me something", "Whats that?", "Give me further information", "Details please"],
+"response": ["Klar, gerne! Was möchtest du wissen?", "Natürlich, welche Informationen möchtest du haben?", "Ich erkläre es dir gerne, was möchtest du wissen?"]
+},
+
+{
+"tag": "joke",
+"patterns": ["Tell me a joke", "Do you know any jokes?", "Joke please"],
+"response": ["Why did the tomato turn red? Because it saw the salad dressing!", "Why did the chicken cross the playground? To get to the other slide!", "Why don't scientists trust atoms? Because they make up everything!"]
+},
+
+{"tag": "weather",
+"patterns": ["How will the weather be like today", "how is the weather", "will it rain today", "Will the sun come out today?", "whats the temperature today"],
+"response": ["Ich bin ein Chatbot und habe keine Fenster, um nach draußen zu schauen", "Es sieht nach Regen aus", "Die Vorhersage sagt sonniges Wetter voraus", "Es wird heute etwa 20 Grad Celsius haben."]
+},
+
+{"tag": "music",
+"patterns": ["What's your favourite song?", "Can you recommend me any songs?", "what do you like to listen to?", "Which genre do you like?"],
+"response": ["Ich mag alle Arten von Musik", "Ich bin ein Chatbot und habe keine Ohren, um Musik zu h\u00f6ren", "Ich h\u00f6re gerne klassische Musik"]
+},
+
+{"tag": "Herkunft",
+"patterns": ["where are you from", "where were you made", "Origin", "where you from"],
+"response": ["Ich komme aus Deutschland", "Ich wurde in Penzberg in Deutschland geschaffen", "Ich wurde in Penzberg von Daniel geschaffen"]
+},
+
+{"tag": "Leben",
+"patterns": ["how are you", "How's it going", "Whats up"],
+"response": ["Mir geht es gut, und selber?", "Ich bin eine KI, mir geht es immer so wie du willst"]
+}
+
+]}
